@@ -1,19 +1,31 @@
 Comando do Git
 
-git --version: verifica a versão atual do git;
+git init: cria um repositório novo git em um diretório pré-existente e cria um subdiretório .git contendo todos os arquivos necessários para o repositório;
 
-git config --global user.name & git config global user.email : usados pra configurar o user e email do github do usuário ao git;
+git status: mostra o atual estado do repositório, bem como seu arquivos modificados, arquivos novos e arquivos prontos para serem commitados;
 
-ls -al ~/.ssh: usado para verificar se já existe alguma chave ssh configurada no repositório;
+git add <filename ou . >: adiciona arquivos ao indíce (staging area) informado e os prepara para o próximo commit;
 
-ssh-keygen -t ed25519 -C "your_email@example.com": utilizado para adicionar uma nova chave ssh ao repositório;
+git rm --cached <file> / git restore --staged <filename ou . >: remove arquivos do indíce (staging area) informado;
 
-eval "$(ssh-agen-s)": inicializa um agente-ssh;
+git branch: lista todas as branchs que existentes;
 
-ssh-add ~/.ssh/id_ed25519: adiciona a chave ssh ao agente;
+git branch -r: lista todas as branchs remotas;
 
-clip <~/.ssh/id_ed25519.pub: copia a chave ssh;
+git branch -a: lista todas as branchs remotas e locais;
 
-github --> settings -->  ssh and gpg keys --> new ssh key --> colar * título que identifique a chave *: adiciona a chave ssh ao github;
+git checkout <branchname>: muda para a branch escolhida;
 
-ssh -T git@github.com yes: testa a conexão 
+git checkout -b <branchname>: cria uma nova branch e muda para a mesma;
+
+git commit -m "<description>": commita as mudanças no índice com uma mensagem descritiva;
+
+git merge <branch>: mescla a branch atual com a selecionada;
+
+git push: envia os commits do repositório local ao repositório remoto;
+
+git branch -D <branchname>: exclui a branch informada;
+
+git fetch: baixa objetos e referências do repositório remoto e atualiza o repositório local com informações do repositório local sem mesclar;
+
+git pull: baixa objetos e referências do repositório remoto e mescla com a atual branch;
