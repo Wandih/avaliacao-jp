@@ -1,0 +1,25 @@
+html{
+    width: 100%;
+    float: none;
+}
+
+body{
+    float: none;
+    background-color: lightblue;
+    text-align: center;
+    font-size:large;
+}
+
+h2{
+    background-color: lightblue;
+}
+
+form{
+    float: none;
+    margin: 5px 650px;
+    padding: none;
+    align-items: center;
+    background-color: white;
+    width: 30%;
+}
+
