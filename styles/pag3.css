@@ -1,0 +1,17 @@
+html{
+    background-image:url(/avaliacao-jp/beautiful-mountains-landscape_23-2151151039.avif);
+    background-size: 2000px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-decoration: gray;
+}
+
+body{
+    color: grey;
+    
+}
+
+div{
+    gap: 10px;
+}
